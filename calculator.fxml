@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane alignment="CENTER" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="586.0" text="Calculator" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rakovets.javafx.caclulator.TaskFiles.CalculatorController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="352.0" prefWidth="461.0">
+         <children>
+            <Button layoutX="7.0" layoutY="51.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="128.0" text="MC">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="usersText" editable="false" layoutX="-1.0" layoutY="-3.0" prefHeight="34.0" prefWidth="586.0">
+               <font>
+                  <Font size="20.0" />
+               </font></TextField>
+            <Button layoutX="154.0" layoutY="51.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="127.0" text="M+">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="301.0" layoutY="51.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="128.0" text="M-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="449.0" layoutY="51.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="128.0" text="MR">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="7.0" layoutY="113.0" mnemonicParsing="false" onMouseClicked="#onMouseClicked" prefHeight="34.0" prefWidth="128.0" text="CE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="7.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#onNumberSevenClicked" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="7.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#onNumberFourClicked" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="7.0" layoutY="296.0" mnemonicParsing="false" onMouseClicked="#onNumberOneClicked" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="7.0" layoutY="358.0" mnemonicParsing="false" onMouseClicked="#onNumberZeroClicked" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="276.0" text="0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="154.0" layoutY="113.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="128.0" text="+/-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="301.0" layoutY="113.0" mnemonicParsing="false" onMouseClicked="#onOperationSplitPressed" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="/">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="449.0" layoutY="113.0" mnemonicParsing="false" onMouseClicked="#onOperationMultiplyPressed" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="X">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="449.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#onOperationMinusPressed" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="301.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#onNumberNineClicked" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="154.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#onNumberEightClicked" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="449.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#onOperationPlusPressed" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="+">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="301.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#onNumberSixClicked" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="154.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#onNumberFiveClicked" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="301.0" layoutY="296.0" mnemonicParsing="false" onMouseClicked="#onNumberThreeClicked" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="154.0" layoutY="296.0" mnemonicParsing="false" onMouseClicked="#onNumberTwoClicked" onKeyPressed="#onKeyPressed" prefHeight="34.0" prefWidth="128.0" text="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="301.0" layoutY="358.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="128.0" text=".">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="449.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#onOperationResultPressed" onKeyPressed="#onKeyPressed" prefHeight="104.0" prefWidth="128.0" text="=">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
