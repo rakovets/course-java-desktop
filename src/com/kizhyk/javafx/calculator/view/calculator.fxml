@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox onKeyPressed="#onKeyPressed" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="480.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.kizhyk.javafx.calculator.controller.CalculatorController">
+    <children>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                    prefHeight="480.0" prefWidth="624.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Button layoutX="20.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="1"/>
+                <TextField fx:id="textField" layoutY="5.0" prefHeight="50.0" prefWidth="624.0"/>
+                <Button layoutX="20.0" layoutY="414.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="282.0" text="0"/>
+                <Button layoutX="171.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="2"/>
+                <Button layoutX="322.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="3"/>
+                <Button layoutX="20.0" layoutY="282.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="4"/>
+                <Button layoutX="171.0" layoutY="282.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="5"/>
+                <Button layoutX="322.0" layoutY="282.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="6"/>
+                <Button layoutX="20.0" layoutY="216.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="7"/>
+                <Button layoutX="171.0" layoutY="216.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="8"/>
+                <Button layoutX="322.0" layoutY="216.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="9"/>
+                <Button layoutX="322.0" layoutY="414.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="."/>
+                <Button layoutX="473.0" layoutY="216.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="-"/>
+                <Button layoutX="473.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="x"/>
+                <Button layoutX="473.0" layoutY="282.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="+"/>
+                <Button layoutX="322.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="/"/>
+                <Button layoutX="171.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="+/-"/>
+                <Button layoutX="20.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="CE"/>
+                <Button layoutX="20.0" layoutY="84.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="MC"/>
+                <Button layoutX="473.0" layoutY="84.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="MR"/>
+                <Button layoutX="322.0" layoutY="84.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="M-"/>
+                <Button layoutX="171.0" layoutY="84.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="32.0"
+                        prefWidth="131.0" text="M+"/>
+                <Button layoutX="473.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="98.0"
+                        prefWidth="131.0" text="="/>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
