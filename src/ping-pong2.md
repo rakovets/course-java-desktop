@@ -1,7 +1,7 @@
 # Ping-pong
 Создать игру Ping-pong.
 
-![Ping-Pong](gui-ping-pong.png)
+![Ping-Pong](../res/img/gui-ping-pong.png)
 
 
 ## Development steps
